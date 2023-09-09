@@ -576,8 +576,16 @@ hr {
     align-items: center;
     gap: 15em;
 }
+.beyond-footer h3 {
+    font-size: 30px;
+}
+.beyond-footer h2 {
+    font-size: 40px;
+}
 .beyond-footer h1 {
     font-size: 50px;
+}
+.beyond-footer h1, h2, h3 {
     font-weight: lighter;
 }
 
