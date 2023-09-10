@@ -1,3 +1,4 @@
 # planet-travel
-a side project developed while learning
-just a newbie learning things... nth special.
+A side project developed while learning. 
+Just a newbie learning things... nth special.
+Responsive? - No, but working on it.
