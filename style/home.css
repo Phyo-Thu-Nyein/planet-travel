@@ -405,7 +405,6 @@ header {
     width: 100%;
     height: 100%;
     border-radius: .5rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: .3s ease-in-out;
 }
 
@@ -437,7 +436,9 @@ header {
 .testimonial-section .test-body .test-card .right {
     right: 120%;
 }
-
+.testimonial-section .test-body .test-card .test-img-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 .testimonial-section .test-body .test-card .test-img-card:hover+.feedback-card {
     opacity: 1;
     z-index: 2;
