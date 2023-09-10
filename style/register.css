@@ -1,0 +1,104 @@
+body {
+    background: #000000b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.bg-img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+/* ---------------- FORM STARTS HERE ---------------- */
+.form-wrapper {
+    color: #fff;
+    width: 18rem;
+    border: 2px solid rgba(255, 255, 255, 0.397);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    padding: 15px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.822);
+}
+.form-wrapper .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-wrapper .form .text-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.form-wrapper .text-inputs .row {
+    position: relative;
+    width: 280px;
+    height: 35px;
+}
+.form-wrapper .text-inputs .row input{
+    color: #fff;
+    background: transparent;
+    width: 83%;
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.473);
+    padding-left: 15%;
+}
+.form-wrapper .text-inputs .row input::placeholder{
+    color: #fff;
+}
+.form-wrapper .text-inputs .row i {
+    color: #29fd53;
+    position: absolute;
+    left: 20px;
+    transform: translateY(70%);
+}
+
+.form-wrapper .form .chk-box {
+    margin-top: 10px;
+}
+
+.form-wrapper .form .button-box {
+    width: 100%;
+}
+.form-wrapper .form .button-box button {
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.473);
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    transition: .4s;
+}
+.form-wrapper .form .button-box button:hover {
+    border-radius: 10px;
+    background: #29fd53;
+    color: #000000;
+    /* box-shadow: 0 0 10px rgb(30, 228, 15); */
+}
+
+.form-wrapper .form .link-box a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    transition: .3s;
+}
+.form-wrapper .form .link-box a:hover {
+    color: #29fd53;
+}

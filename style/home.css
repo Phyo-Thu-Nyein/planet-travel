@@ -59,6 +59,7 @@ header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.082);
     background-color: #ffffff17;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     position: fixed;
     width: 100%;
     display: flex;
@@ -211,6 +212,7 @@ header {
 .hero-section p {
     border: 2px solid #ffffff17;
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     font-size: 20px;
     background-color: #183d3d67;
     padding: 16px 20px;
@@ -324,6 +326,7 @@ header {
     width: 40rem;
     border: 2px solid #ffffff17;
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     font-size: 24px;
     background-color: #183d3d67;
     padding: 16px 20px;
@@ -355,6 +358,7 @@ header {
 /* -------------------- TESTIMONIAL SECTION -------------------- */
 .testimonial-section {
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     padding: 1.2rem 0;
     width: 100%;
     background-color: #58666150;
@@ -497,6 +501,7 @@ header {
 /* -------------------- FOOTER STARTS HERE -------------------- */
 .footer-section {
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     width: 100%;
     height: 70vh;
     background-color: #0000008a;
