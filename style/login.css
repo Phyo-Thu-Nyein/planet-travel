@@ -11,12 +11,161 @@ body {
     background-attachment: fixed;
     overflow-y: hidden;
 }
- *{
+
+:root {
+    --bg-color: #040D12;
+    --txt-color: #fff;
+    --main-color: #29fd53;
+}
+
+* {
+    list-style: none;
     font-family: 'Rajdhani', sans-serif;
     box-sizing: border-box;
     text-decoration: none;
     color: #fff;
- }
+}
+
+
+/* --------------- NAVIGATION BAR SECTION --------------- */
+header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.082);
+    background-color: #ffffff17;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    top: 0;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 12%;
+    transition: all 0.5s;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    margin-left: 3px;
+    font-size: 40px;
+    color: var(--main-color);
+}
+
+.logo span {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.mynavbar {
+    display: flex;
+}
+
+.mynavbar a {
+    font-size: 1.2rem;
+    margin: 0 30px;
+    padding: 5px 0;
+    transition: all 0.5s;
+}
+
+.mynavbar a:hover {
+    color: var(--main-color);
+}
+
+/* .mynavbar a.active {
+    color: var(--main-color);
+} */
+
+.main {
+    display: flex;
+    align-items: center;
+}
+
+.main a {
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: all 0.5s;
+}
+
+.main a:hover {
+    color: var(--main-color);
+}
+
+.main .user {
+    display: flex;
+    align-items: center;
+}
+
+.main .user i {
+    margin-right: 5px;
+    font-size: 28px;
+    color: var(--main-color);
+}
+
+.main #menu-icon {
+    font-size: 35px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+
+@media (max-width: 1280px) {
+    header {
+        padding: 14px 2%;
+        transition: 0.2s;
+    }
+
+    .mynavbar a {
+        padding: 5px 0;
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 1090px) {
+    #menu-icon {
+        display: block !important;
+    }
+
+    .mynavbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 170px;
+        height: 36vh;
+        background: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 15px;
+        transition: all 0.5s;
+    }
+
+    .mynavbar a {
+        display: block;
+        margin: 12px 0;
+        padding: 0 25px;
+        transition: all 0.5s;
+    }
+
+    .mynavbar a:hover {
+        color: var(--txt-color);
+        transform: translateY(-5px);
+    }
+
+    .mynavbar a.active {
+        color: var(--txt-color);
+    }
+
+    .mynavbar.open {
+        right: 2%;
+    }
+}
+
+/* ------------------------ navigation ended ------------------------ */
+
 
 /* ---------------- FORM STARTS HERE ---------------- */
 .form-wrapper {
@@ -33,6 +182,7 @@ body {
     align-items: center;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.822);
 }
+
 .form-wrapper h1 {
     margin-bottom: 40px;
 }
@@ -52,12 +202,17 @@ body {
     gap: 24px;
     width: 92%;
 }
+
 .form-wrapper .text-inputs .row {
+    display: flex;
+    justify-content: center;
     position: relative;
     width: 100%;
     height: 45px;
 }
-.form-wrapper .text-inputs .row input{
+
+.form-wrapper .text-inputs .row input {
+    outline: none;
     color: #fff;
     background: transparent;
     width: 100%;
@@ -68,9 +223,11 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.473);
     padding-left: 9%;
 }
-.form-wrapper .text-inputs .row input::placeholder{
+
+.form-wrapper .text-inputs .row input::placeholder {
     color: #fff;
 }
+
 .form-wrapper .text-inputs .row i {
     color: #29fd53;
     position: absolute;
@@ -85,9 +242,11 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
 .form-wrapper .form .chk-box a {
     font-size: 14px;
 }
+
 .form-wrapper .form .chk-box a:hover {
     text-decoration: underline;
 }
@@ -95,6 +254,7 @@ body {
 .form-wrapper .form .button-box {
     width: 90%;
 }
+
 .form-wrapper .form .button-box button {
     margin-top: 10px;
     width: 100%;
@@ -111,6 +271,7 @@ body {
     font-weight: 600;
     transition: .4s;
 }
+
 .form-wrapper .form .button-box button:hover {
     border-radius: 10px;
     background: #29fd53;
@@ -124,6 +285,7 @@ body {
     color: #fff;
     transition: .3s;
 }
+
 .form-wrapper .form .link-box a:hover {
     color: #29fd53;
 }
