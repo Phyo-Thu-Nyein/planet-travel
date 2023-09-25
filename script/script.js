@@ -9,3 +9,13 @@ menu.onclick = () => {
 
 
 // PLANET JS 
+
+function showText(element) {
+    var gist = element.querySelector('.gist');
+    gist.style.display = "block";
+}
+
+function hide(element) {
+    var gist = element.querySelector('.gist');
+    gist.style.display = "none";
+}

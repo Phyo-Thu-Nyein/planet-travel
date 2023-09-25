@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planet Travel</title>
+
+    <link rel="stylesheet" href="/style/register.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Quicksand:wght@300&family=Rajdhani&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR  -->
+    <header>
+      <a class="logo" href="/index.html">
+        <span>Planet Travel</span>
+        <i class="bx bx-rocket"></i>
+      </a>
+
+      <ul class="mynavbar">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="#">Planets</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+
+      <div class="main">
+        <a href="/pages/login.html" class="user"
+          ><i class="bx bxs-user"></i>Login</a
+        >
+        <a href="/pages/register.html">Signup</a>
+        <div><i class="bx bx-menu" id="menu-icon"></i></div>
+      </div>
+    </header>
+    <!-- BG IMAGE  -->
+    <div class="bg-img">
+      <img
+        src="../img/register/reg-bg.jpg"
+        alt="Green Planet background image"
+      />
+    </div>
+
+    <!-- FORM STARTS  -->
+    <div class="form-wrapper">
+      <h1>Register</h1>
+      <form action="" class="form">
+        <div class="text-inputs">
+          <div class="row name-box">
+            <label for=""><i class="bx bxs-user"></i></label>
+            <input
+              type="text"
+              name="username"
+              id="name"
+              placeholder="Username"
+            />
+          </div>
+          <div class="row mail-box">
+            <label for=""><i class="bx bxs-envelope"></i></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+          </div>
+          <div class="row psw-box">
+            <label for=""><i class="bx bxs-lock"></i> </label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+          </div>
+          <div class="row cpsw-box">
+            <label for=""><i class="bx bxs-lock"></i> </label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Confirm Password"
+            />
+          </div>
+        </div>
+        <div class="row chk-box">
+          <label for="checkbox">
+            <input type="checkbox" id="checkbox" />I Accept All Terms &
+            Conditions.
+          </label>
+        </div>
+        <div class="row button-box">
+          <button type="submit" id="register">Register</button>
+        </div>
+        <div class="row link-box">
+          <p>Have an account? <a href="/pages/login.html">Login here</a></p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
